@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Date
 from sqlalchemy.orm import relationship
-from flask_appbuilder import Model
+from app.database import Model
 
 
 class Patient(Model):
@@ -17,4 +17,5 @@ class Observations(Model):
     temp    = Column(Integer)
     gcs     = Column(Integer)
     resp_rate   = Column(Integer)
+    news    = Column(Integer)
     time    =Column(datetime)
