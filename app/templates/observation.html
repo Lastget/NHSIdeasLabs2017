@@ -1,0 +1,12 @@
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(observation.heart_rate) }}
+    {{ render_field(observation.sys_bp) }}
+    {{ render_field(observation.dia_bp) }}
+    {{ render_field(observation.temp) }}
+    {{ render_field(observation.resp_rate) }}
+    {{ render_field(observation.gcs) }}
+  </dl>
+  <p><input type=submit value=Register>
+</form>
